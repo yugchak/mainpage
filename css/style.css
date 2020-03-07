@@ -6,8 +6,15 @@
         	
 }
 #main {
+    border:5px solid yellow;
     position: absolute;
     width: 99%;
+}
+#first {
+    border:5px solid red;
+}
+#second {
+    border:5px solid red;
 }
 .td-1 {
     border:5px solid black;
