@@ -6,29 +6,29 @@
         	
 }
 #main {
-    border:5px solid yellow;
+    
     position: absolute;
-    width: 99%;
+    width: 100%;
 }
 #first {
-    border:5px solid red;
+    
     width: 100%;
     margin: 20px 0px;
 }
 #second {
-    border:5px solid black;
+    
     width: 100%;
     margin: 20px 0px;
 }
 #td-1 {
-    border:5px solid #ccc;
+    
     margin: 10px 0px;
     margin-left: 25%;
     width: 20%;
     float: left;
 }
 #td-2 {
-    border:5px solid pink;
+    
     margin: 10px 0px;
     margin-right: 25%;
     width: 20%;
