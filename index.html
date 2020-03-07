@@ -1,34 +1,29 @@
-<html>
-  <head>
-    <title>主页</title>
-    <link rel="icon" type="image/x-icon" href="s.ico" />
-    <link rel="stylesheet" type="text/css" href="css/style.css"">
-  </head>
-<body>
+---
+layout: default
+title: 主页
+---
 
-	<div id="container">
-		<div id="header">
-			<h1>Hello</h1>
+<div id="container">
+	<div id="header">
+		<h1>Hello</h1>
 
-			<p>Vinty</p>
-		</div>
-
-		<div id="main">
-			<div id="first">
-				<div class="td-1"><a href="https://yugchak.github.io/GradDesign">Good Show!</a></div> 
-				<div class="td-2"><a href="https://yugchak.github.io/htmlspe">HTML</a></div> 
-			</div>
-			<div id="second">
-				<div class="td-3"><a href="https://yugchak.github.io/notes">notes</a></div>
-				<div class="td-4"><a href="https://yugchak.github.io/notes/git/">git</a></div>  
-				<div class="td-5"><a href="https://yugchak.github.io/notes/git">git</a></div>  
-			</div>
-		</div>
-
-		<div id="footer">
-			<p>footer</p>
-		</div>
+		<p>Vinty</p>
 	</div>
 
-</body>
-</html>
+	<div id="main">
+		<div id="first">
+			<div class="td-1"><a href="https://yugchak.github.io/GradDesign">Good Show!</a></div> 
+			<div class="td-2"><a href="https://yugchak.github.io/htmlspe">HTML</a></div> 
+		</div>
+		<div id="second">
+			<div class="td-3"><a href="https://yugchak.github.io/notes">notes</a></div>
+			<div class="td-4"><a href="https://yugchak.github.io/notes/git/">git</a></div>  
+			<div class="td-5"><a href="https://yugchak.github.io/notes/git">git</a></div>  
+		</div>
+		{% include content.html %}
+	</div>
+
+	<div id="footer">
+		<p>footer</p>
+	</div>
+</div>
