@@ -16,11 +16,13 @@ title: 主页
 			<li>之前做网页设计整理的<a target="_blank" href="https://yugchak.github.io/htmlspe">页面素材</a></li>
 			<li>学习各方面知识时整理的<a target="_blank" href="https://yugchak.github.io/notes">学习笔记</a></li>
 		</ul>
-		{% assign note = site.data.notes[1] %}
+		{% assign note[0] = site.data.notes[0] %}
+		{% assign note[1] = site.data.notes[1] %}
 		<div id="second">
-			<div id="tit">Latest note # {{ note.data | data: "%b %d,%Y" }}</div>
+			<div id="tit">Latest note # {{ note[0].date | date:"%b %d,%Y" }}</div>
 			<p>
-			 {{ note.content | markdownify }}
+				{{ note[0].content | markdownify }}
+				{{ note[1].content | markdownify }}
 			</p>
 		</div>
 	</main>
