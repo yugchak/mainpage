@@ -10,7 +10,7 @@
 	{% if page.path != 'index.html' %}			
     		<title>{{ page.title }}</title>
 	{% else %}
-		<title>123</title>
+		<title>主页</title>
 	{% endif %}
 
     </head>
@@ -19,7 +19,10 @@
 		<header>
 			{% if page.path != 'index.html' %}
 				<small><a href="/">$ cd~</a></small>
+			{% else %}
+				{{ page.title }}
 			{% endif %}
+			
 		</header>
 		<main>
 　　　　	{{ content }}
