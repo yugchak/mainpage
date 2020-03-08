@@ -8,7 +8,7 @@
 #main {
     
     position: absolute;
-    width: 100%;
+    width: 99%;
 }
 #first {
     
@@ -16,9 +16,9 @@
     margin: 20px 0px;
 }
 #second {
-    
+    border:5px solid #ccc;
     width: 100%;
-    margin: 20px 0px;
+    margin: 30% 0px;
 }
 #td-1 {
     
