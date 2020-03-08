@@ -12,9 +12,9 @@ title: 主页
 	<li>大学毕业时的<a target="_blank" href="https://yugchak.github.io/GradDesign">毕业设计</a>，略有瑕疵</li>
 	<li>之前做网页设计整理的<a target="_blank" href="https://yugchak.github.io/htmlspe">页面素材</a></li>
 	<li>学习各方面知识时整理的<a target="_blank" href="https://yugchak.github.io/notes">学习笔记</a></li>
-	<li>学习各方面知识时整理的<a target="_blank" href="/notes">学习笔记</a></li>
+	<li>学习各方面知识时整理的<a href="/notes">学习笔记</a></li>
 </ul>
-{% assign note[0] = site.data.notes[0] %}
+{% assign note = site.data.notes[0] %}
 <div id="second">
 	<div id="tit">Latest note # {{ note.date | date:"%b %d,%Y" }}</div>
 	<p>
