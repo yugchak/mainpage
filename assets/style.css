@@ -8,6 +8,9 @@ header, main {
     max-width: 45em;
     margin: auto;
 }
+.pd {
+    margin: 0px auto;
+}
 .h1 {
     font-size: 1.2rem;
     margin-bottom: 0;
