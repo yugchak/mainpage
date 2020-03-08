@@ -3,28 +3,21 @@ layout: default
 title: 主页
 ---
 
-<div id="container">
-	<header>
-		<h1>Hey!</h1>
 
-		<p>Vinty</p>
-	</header>
+<h1>Hey!</h1>
 
-	<main>
-		<ul id="first">
-			<li>大学毕业时的<a target="_blank" href="https://yugchak.github.io/GradDesign">毕业设计</a>，略有瑕疵</li>
-			<li>之前做网页设计整理的<a target="_blank" href="https://yugchak.github.io/htmlspe">页面素材</a></li>
-			<li>学习各方面知识时整理的<a target="_blank" href="https://yugchak.github.io/notes">学习笔记</a></li>
-		</ul>
-		{% assign note[0] = site.data.notes[0] %}
-		{% assign note[1] = site.data.notes[1] %}
-		<div id="second">
-			<div id="tit">Latest note # {{ note[0].date | date:"%b %d,%Y" }}</div>
-			<p>
-				{{ note[0].content | markdownify }}
-				{{ note[1].content | markdownify }}
-			</p>
-		</div>
-	</main>
+<p>Vinty</p>
 
+<ul id="first">
+	<li>大学毕业时的<a target="_blank" href="https://yugchak.github.io/GradDesign">毕业设计</a>，略有瑕疵</li>
+	<li>之前做网页设计整理的<a target="_blank" href="https://yugchak.github.io/htmlspe">页面素材</a></li>
+	<li>学习各方面知识时整理的<a target="_blank" href="https://yugchak.github.io/notes">学习笔记</a></li>
+	<li>学习各方面知识时整理的<a target="_blank" href="/notes">学习笔记</a></li>
+</ul>
+{% assign note[0] = site.data.notes[0] %}
+<div id="second">
+	<div id="tit">Latest note # {{ note.date | date:"%b %d,%Y" }}</div>
+	<p>
+	{{ note.content | markdownify }}
+	</p>
 </div>

@@ -12,7 +12,11 @@
     </head>
 
 　　<body>
-
+		<header>
+			{% if page.path != 'index.html' %}
+				<small><a href="/">$ cd~</a></small>
+			{% endif %}
+		</header>
 　　　　{{ content }}
 
 　　</body>
