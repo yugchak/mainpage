@@ -6,8 +6,12 @@
 
     	<link rel="icon" type="image/x-icon" href="s.ico" />
     	<link rel="stylesheet" type="text/css" href="/assets/style.css"">
-
-    	<title>{{ page.title }}</title>
+	
+	{% if page.path != 'index.html' %}			
+    		<title>{{ page.title }}</title>
+	{% else %}
+		<title>123</title>
+	{% endif %}
 
     </head>
 
