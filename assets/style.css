@@ -8,12 +8,11 @@ header, main {
     max-width: 45em;
     margin: auto;
 }
-.pd {
-    margin: 0px auto;
+.main_p {
+    margin-top: 0em;
 }
 .h1 {
     font-size: 1.2rem;
-    margin-bottom: 0;
     text-align: center;
 }
 #second {

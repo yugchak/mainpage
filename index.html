@@ -2,6 +2,7 @@
 layout: default
 title: Hey!
 ---
+<p class="main_p">I have been working remotely every day from a hotel cafe this week and had daily video calls. 3 out of the 5 groups of people I had calls with asked: “Is there a man near you talking at the top of his lungs? Cause I am literally only hearing him.” And the answer was yes, almost always. (These men were also working remotely on their laptops)</p>
 <ul id="first">
 	<li>大学毕业时的<a target="_blank" href="https://yugchak.github.io/GradDesign">毕业设计</a>，略有瑕疵</li>
 	<li>之前做网页设计整理的<a target="_blank" href="https://yugchak.github.io/htmlspe">页面素材</a></li>
@@ -11,7 +12,5 @@ title: Hey!
 {% assign note = site.data.notes[0] %}
 <div id="second">
 	<div id="tit">Latest note # {{ note.date | date:"%b %d,%Y" }}</div>
-	<p>
 	{{ note.content | markdownify }}
-	</p>
 </div>
