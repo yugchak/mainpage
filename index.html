@@ -16,6 +16,8 @@ title: Hey!
 	{% for con in site.data.notes %}
 		{{ con.content | markdownify }}
 		<p>------------------------------</p>
+		<p>{{ con.content }}</p>
+		<p>------------------------------</p>
 	{% endfor %}
 	
 </div>
