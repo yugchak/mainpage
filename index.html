@@ -12,5 +12,7 @@ title: Hey!
 {% assign note = site.data.notes[0] %}
 <div id="second">
 	<div id="tit">Latest note # {{ note.date | date:"%b %d,%Y" }}</div>
-	{{ note.content | markdownify }}
+	{% for number in sit.data.notes %}
+		{{ number.content | markdownify }}
+	
 </div>
