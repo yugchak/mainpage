@@ -14,10 +14,7 @@ title: Hey!
 	<div id="tit">Latest note # {{ note.date | date:"%b %d,%Y" }}</div>
 	
 	{% for con in site.data.notes %}
-		{{ con.content | markdownify }}
-		<p>------------------------------</p>
-		<p>{{ con.content }}</p>
-		<p>------------------------------</p>
+		<p>{{ con.content | markdownify }}</p>
 	{% endfor %}
 	
 </div>
