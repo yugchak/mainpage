@@ -7,21 +7,20 @@ title: Hey!
 	<li>大学毕业时的<a target="_blank" href="https://yugchak.github.io/GradDesign">毕业设计</a>，略有瑕疵</li>
 	<li>之前做网页设计整理的<a target="_blank" href="https://yugchak.github.io/htmlspe">页面素材</a></li>
 	<li>学习各方面知识时整理的<a target="_blank" href="https://yugchak.github.io/notes">学习笔记</a></li>
-	<li>学习各方面知识整理的<a href="/notes">笔记</a></li>
+	<li>学习各方面知识时整理的<a href="/notes">笔记</a></li>
 </ul>
 {% assign note = site.data.notes[0] %}
 <div id="second">
 	<div id="tit">Latest note # {{ note.date | date:"%b %d,%Y" }}</div>
-	{% assign number = sit.data.notes | group_by:"content" %}
-	{% for con in number %}
-		{{ number | markdownify }}
+	
+	{% for con in site.data.notes %}
+		{{ con.content | markdownify }}
 		<br>
 		<p>------------------------------</p>
-		{{ con | markdownify }}
+		<p>{{ con.content }}</p>
 		<br>
 		<p>------------------------------</p>
-		<p>con</p>
-		<br>
+		
 	{% endfor %}
 	
 </div>
